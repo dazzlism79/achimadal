@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+/* submit.css */
+
+body {
+    background-image: url(../img/submit.jpg);
+}
+
+main {
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    color: #fff;
+}
+
+main .title {
+    width: 25%;
+    margin-right: 5%;
+    /* outline: 2px solid lime; */
+}
+
+main .title h2 {
+    font-size: 1.375rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+main .title h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+main .detail {
+    width: 30%;
+
+    /* outline: 2px solid gold; */
+}
+
+main .detail ul {}
+
+main .detail ul li {}
+
+
+main .guide {
+    position: absolute;
+    width: 60%;
+    left: 10%;
+    top: 160px;
+    /* display: none; */
+}
+
+main .guide::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+main .guide .title {
+    float: left;
+    margin-right: 5%;
+}
+
+main .guide .detail {
+    float: left;
+    margin-top: 45px;
+}
+
+main .guide .detail ul li {
+    list-style: disc;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+main .guide .detail p {
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+    margin-top: 20px;
+}
+
+main .faq {
+    width: 70%;
+    position: absolute;
+    left: 10%;
+    top: 160px;
+    display: none;
+}
+
+main .faq::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+main .faq .title {
+    float: left;
+    width: 30%;
+    margin-right: 2%;
+    /* outline: 2px solid lime; */
+}
+
+main .faq .detail {
+    float: left;
+    width: 40%;
+    margin-top: 45px;
+    /* outline: 2px solid yellow; */
+}
+
+main .faq .detail ul li {}
+
+main .faq .detail ul li h4 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 2rem;
+    padding: 10px 0;
+}
+
+main .faq .detail ul li p {
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 2rem;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border: solid #fff;
+    border-width: 2px 0;
+}
+
+main .btn {
+    width: 20%;
+    position: absolute;
+    left: 10%;
+    top: 80px;
+}
+
+main .btn button {
+    width: 35%;
+    margin-right: 3%;
+    padding: 8px 2px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+main .btn button:first-child {
+    background-color: #76D4DC;
+    color: #5F5BFA;
+}
+
+main .btn button:last-child {
+    background-color: #5F5BFA;
+    color: #76D4DC;
+}

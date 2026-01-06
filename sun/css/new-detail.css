@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+/* new-detail.css */
+
+
+section {
+    width: 50%;
+    margin: 0 auto;
+    /*  outline: 2px solid green; */
+}
+
+section .headline {
+    margin: 60px 0;
+    text-align: center;
+
+}
+
+section .headline h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+section .book-info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section .book-info p {
+    font-size: 0.875rem;
+    color: #888;
+    line-height: 1.1rem;
+}
+
+section .book-info .main-img {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+section .book-info .main-img img {
+    width: 100%;
+}
+
+
+
+section .article {
+    width: 100%;
+}
+
+section .article h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 40px 0;
+    text-indent: 1em;
+}
+
+section .article p {
+    margin-bottom: 30px;
+    text-indent: 1em;
+    line-height: 1.8rem;
+}
+
+section .article span {
+    margin: 10px auto 0;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.8rem;
+
+}
+
+section .article span.from {
+    margin: 10px auto 0;
+    display: block;
+    text-align: right;
+    line-height: 1.8rem;
+}
+
+section .slider {
+    width: 650px;
+    position: relative;
+    overflow: hidden;
+    /* outline: 2px solid red; */
+    margin: 60px auto;
+}
+
+section .slider::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section .slider button {
+    position: absolute;
+    font-size: 28px;
+    border: none;
+    color: #365888;
+    background-color: transparent;
+}
+
+section .slider #left {
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+section .slider #right {
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+section .slider .container {
+    width: 1000%;
+
+}
+
+section .slider .container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section .slider .container .item {
+    width: 650px;
+    float: left;
+}
+
+section .slider .container .item img {
+    width: 100%;
+}
+
+section .buy {
+    width: 20%;
+    margin: 80px auto;
+    padding: 20px 30px;
+    background-color: #c5d5e5;
+    color: #365888;
+    border-radius: 10px;
+    /*  outline: 2px solid red; */
+    box-shadow: 0 2px 10px #365888;
+}
+
+section .buy h4 {
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+
+section .main-img {
+    margin: 40px auto 60px;
+}
+
+section .main-img img {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+footer {
+    width: 100%;
+    height: 100px;
+    max-width: 1920px;
+    position: static;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    box-sizing: border-box;
+    z-index: 999;
+    margin: 0 auto;
+}
+
+footer::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer .info {
+    float: left;
+    margin-left: 10%;
+    margin-top: 15px;
+    /* outline: 2px solid red; */
+}
+
+
+footer .info li {
+    margin-bottom: 5px;
+}
+
+
+footer .info ul address {
+    font-style: normal;
+}
+
+footer .info ul .business a {
+    display: inline-block;
+}
+
+footer .info ul .business span {
+    font-weight: 700;
+}
+
+footer .sns {
+    float: right;
+    margin-right: 10%;
+    line-height: 100px;
+    /* outline: 2px solid red; */
+}
+
+footer .sns a {
+    display: inline-block;
+}
+
+footer .sns .blog {
+    width: 18px;
+    background: url(../../img/blog.png) no-repeat center;
+    color: transparent;
+    margin-right: 10px;
+    /* outline: 2px solid blue; */
+}
+
+footer .sns .instagram {
+    width: 18px;
+    background: url(../../img/instagram.png)no-repeat center;
+    /* outline: 2px solid blue; */
+    margin-right: 10px;
+    color: transparent;
+}
+
+footer .sns .twitter {
+    width: 18px;
+    background: url(../../img/twitter.png)no-repeat center;
+    /* outline: 2px solid blue; */
+    color: transparent;
+}
