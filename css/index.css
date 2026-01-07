@@ -204,3 +204,11 @@ section .container .move ul li.sub {
 .eye ul li a:hover {
     text-decoration: underline;
 }
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
