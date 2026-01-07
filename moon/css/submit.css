@@ -36,10 +36,6 @@ main .detail {
     /* outline: 2px solid gold; */
 }
 
-main .detail ul {}
-
-main .detail ul li {}
-
 
 main .guide {
     position: absolute;
@@ -107,7 +103,6 @@ main .faq .detail {
     /* outline: 2px solid yellow; */
 }
 
-main .faq .detail ul li {}
 
 main .faq .detail ul li h4 {
     font-size: 1.75rem;
@@ -152,4 +147,12 @@ main .btn button:first-child {
 main .btn button:last-child {
     background-color: #5F5BFA;
     color: #76D4DC;
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
 }
