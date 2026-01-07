@@ -76,7 +76,7 @@
 .content .box .thumb {
     /* outline: 2px solid red; */
     float: right;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
     box-shadow: #888 0 4px 8px;
 }
 
@@ -186,4 +186,5 @@ footer .sns .twitter {
     background: url(../../img/twitter.png)no-repeat center;
     /* outline: 2px solid blue; */
     color: transparent;
+
 }
