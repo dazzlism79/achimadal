@@ -115,7 +115,7 @@ section table td.four {
     position: absolute;
     top: 19%;
     right: 7%;
-     transform: rotate(-10deg);
+    transform: rotate(-10deg);
 }
 
 .img3 {
@@ -183,7 +183,6 @@ footer .info {
     margin-left: 10%;
     margin-top: 15px;
     /* outline: 2px solid red; */
-    z-index: 999999;
 }
 
 
@@ -206,7 +205,7 @@ footer .info ul .business span {
 
 footer .sns {
     float: right;
-    margin-right: 30%;
+    margin-right: 10%;
     line-height: 100px;
     /* outline: 2px solid red; */
 }
@@ -217,26 +216,23 @@ footer .sns a {
 
 footer .sns .blog {
     width: 18px;
-    background: url(../img/blog-white.png) no-repeat center;
+    background: url(../../img/blog-white.png) no-repeat center;
     color: transparent;
     margin-right: 10px;
     /* outline: 2px solid blue; */
-    z-index: 999999;
 }
 
 footer .sns .instagram {
     width: 18px;
-    background: url(../img/instagram-white.png)no-repeat center;
+    background: url(../../img/instagram-white.png)no-repeat center;
     /* outline: 2px solid blue; */
     margin-right: 10px;
     color: transparent;
-    z-index: 999999;
 }
 
 footer .sns .twitter {
     width: 18px;
-    background: url(../img/twitter-white.png)no-repeat center;
+    background: url(../../img/twitter-white.png)no-repeat center;
     /* outline: 2px solid blue; */
     color: transparent;
-    z-index: 999999;
 }
