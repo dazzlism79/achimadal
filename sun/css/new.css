@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* article.css */
+/* bullet.css */
 
 .container {
     width: 100%;
@@ -25,69 +25,67 @@
 }
 
 .content {
-    width: 61%;
-    margin: 60px auto;
+    width: 60%;
+    margin: 60px auto 40px;
     /* outline: 2px solid blue; */
 }
 
-.content a {
-    display: block;
-}
-
-.content .box {
-    /* outline: 2px solid blue; */
-    margin-bottom: 40px;
-}
-
-.content .box::after {
+.content::after {
     content: "";
     display: block;
     clear: both;
 }
 
-.content .box .txt {
-    /*  outline: 2px solid green; */
+.content .box {
+    width: 32%;
+    height: 360px;
+    /*  outline: 2px solid tomato; */
     float: left;
-    height: 300px;
-    width: 680px;
-    padding: 30px 40px;
-    box-sizing: border-box;
-    background-color: #f2f2f2;
+    margin-bottom: 60px;
+}
+
+.content .box~.box {
+    margin-left: 2%;
+}
+
+.content .box:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+
+.box .img-box {
+    width: 50%;
+    height: 200px;
+    /*  outline: 2px solid lime; */
+    overflow: hidden;
+    margin: 0 auto 20px;
     box-shadow: #888 0 4px 8px;
+    border-radius: 15px;
 }
 
-.content .box .txt h3 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-
-.content .box .txt h4 {
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.content .box .txt p {
-    font-size: 1.1rem;
-    letter-spacing: -1.5px;
-    line-height: 1.8rem;
-}
-
-.content .box .thumb {
-    /* outline: 2px solid red; */
-    float: right;
-    /*   margin-left: 40px; */
-    box-shadow: #888 0 4px 8px;
-}
-
-.content .box .thumb img {
+.box .img-box img {
     width: 100%;
 }
 
-.container .btn {
-    /* width: 5%; */
+.box .txt-box {
+    width: 70%;
+
+    margin: 0 auto;
+}
+
+.box .txt-box h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
     text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+    word-break: keep-all;
+}
+
+.box .txt-box p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 500;
 }
 
 .container .btn {
@@ -109,6 +107,7 @@
     background-color: #333;
     color: #C1CF5D;
 }
+
 
 /* //////////////////////////////////////////////////////////////////////////////// */
 
