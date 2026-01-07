@@ -10,12 +10,12 @@ $(document).ready(function () {
     targetUp = $('.con1, .con5');
     targetDown = $('.con3, .con7');
 
-    autocall = setInterval(flow, 15);
+    autocall = setInterval(flow, 25);
 
     $(targetUp).add(targetDown).hover(function () {
         clearInterval(autocall);
     }, function () {
-        autocall = setInterval(flow, 15);
+        autocall = setInterval(flow, 25);
     });
 });
 
