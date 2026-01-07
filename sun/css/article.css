@@ -48,7 +48,7 @@
     /*  outline: 2px solid green; */
     float: left;
     height: 300px;
-    width: 700px;
+    width: 680px;
     padding: 30px 40px;
     box-sizing: border-box;
     background-color: #f2f2f2;
@@ -188,3 +188,4 @@ footer .sns .twitter {
     color: transparent;
 
 }
+
