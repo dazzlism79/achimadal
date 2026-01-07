@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+body {
+    background-color: #5F5BFA;
+    position: relative;
+    /* 추가: Footer 높이만큼 여백 확보 */
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    /* 내용이 적어도 화면 꽉 차게 */
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+}
+
+section {
+    position: relative;
+    padding-top: 140px;
+    /* 헤더에 가려지지 않게 윗 공간 확보 */
+    padding-bottom: 150px;
+    /* 중요: Footer 높이(100px) + 추가 여백(50px) */
+    width: 100%;
+    overflow: hidden;
+    /* 배경 이미지들이 옆으로 튀어나가는 것 방지 */
+}
+
+
+section .bookclub {
+    position: relative;
+    /* absolute에서 변경 */
+    width: 40%;
+    margin-left: 10%;
+    /* left: 10% 대신 margin 사용 */
+
+    /* 기존 top, left, right 등 좌표값은 삭제 */
+    top: auto;
+    left: auto;
+
+    color: #fff;
+    margin-bottom: 60px;
+    /* 테이블과의 간격 */
+}
+
+section .bookclub h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+section .bookclub p {
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    word-break: keep-all;
+    margin-bottom: 20px;
+}
+
+section table {
+    position: relative;
+    /* absolute에서 변경 (가장 중요) */
+    width: 45%;
+
+    /* 위치 잡기 */
+    margin-left: 10%;
+    /* left: 10% 대신 margin 사용 */
+    margin-bottom: 0;
+    /* 아래 여백은 section의 padding-bottom이 담당함 */
+
+    /* 기존 좌표값 삭제 */
+    top: auto;
+    left: auto;
+
+    /* 기존 디자인 유지 */
+    text-align: center;
+    border-collapse: collapse;
+    border: 3px solid #fff;
+    color: #fff;
+    z-index: 10;
+    /* 배경 이미지보다 위에 오게 설정 */
+}
+
+section table tr {
+    border: 2px solid #fff;
+}
+
+section table td {
+    border: 3px solid #fff;
+    padding: 20px 10px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+section table td.three {
+    color: #FFFFB2;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+section table td.four {
+    color: #C1CF5D;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+.img1 {
+    position: absolute;
+    top: -130%;
+    right: -6.5%;
+    transform: rotate(-53deg);
+}
+
+.img2 {
+    position: absolute;
+    top: 19%;
+    right: 7%;
+     transform: rotate(-10deg);
+}
+
+.img3 {
+    position: absolute;
+    top: 36%;
+    right: 28%;
+    transform: rotate(-20deg);
+}
+
+.img4 {
+    position: absolute;
+    bottom: 30%;
+    right: 8%;
+    transform: rotate(24deg);
+}
+
+.img5 {
+    position: absolute;
+    top: 9%;
+    right: 31%;
+    transform: rotate(-20deg);
+}
+
+.img6 {
+    position: absolute;
+    bottom: -45%;
+    left: -6%;
+    transform: rotate(70deg);
+}
+
+.img7 {
+    position: absolute;
+    bottom: 11%;
+    right: 25%;
+    transform: rotate(-16deg);
+
+}
+
+
+
+/* /////////////////////////////////////////////////////// */
+
+footer {
+    width: 100%;
+    height: 100px;
+    max-width: 1920px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    box-sizing: border-box;
+    z-index: 999;
+    margin: 0 auto;
+}
+
+footer::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer .info {
+    float: left;
+    margin-left: 10%;
+    margin-top: 15px;
+    /* outline: 2px solid red; */
+    z-index: 999999;
+}
+
+
+footer .info li {
+    margin-bottom: 5px;
+}
+
+
+footer .info ul address {
+    font-style: normal;
+}
+
+footer .info ul .business a {
+    display: inline-block;
+}
+
+footer .info ul .business span {
+    font-weight: 700;
+}
+
+footer .sns {
+    float: right;
+    margin-right: 30%;
+    line-height: 100px;
+    /* outline: 2px solid red; */
+}
+
+footer .sns a {
+    display: inline-block;
+}
+
+footer .sns .blog {
+    width: 18px;
+    background: url(../img/blog-white.png) no-repeat center;
+    color: transparent;
+    margin-right: 10px;
+    /* outline: 2px solid blue; */
+    z-index: 999999;
+}
+
+footer .sns .instagram {
+    width: 18px;
+    background: url(../img/instagram-white.png)no-repeat center;
+    /* outline: 2px solid blue; */
+    margin-right: 10px;
+    color: transparent;
+    z-index: 999999;
+}
+
+footer .sns .twitter {
+    width: 18px;
+    background: url(../img/twitter-white.png)no-repeat center;
+    /* outline: 2px solid blue; */
+    color: transparent;
+    z-index: 999999;
+}
