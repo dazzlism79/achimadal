@@ -24,7 +24,7 @@
 }
 
 .content {
-    width: 60%;
+    width: 61%;
     margin: 60px auto 40px;
     /* outline: 2px solid blue; */
 }
@@ -68,7 +68,7 @@
 }
 
 .content .box .txt p {
-    font-size: 1.125rem;
+    font-size: 1.1rem;
     letter-spacing: -1.5px;
     line-height: 1.8rem;
 }
@@ -76,7 +76,7 @@
 .content .box .thumb {
     /* outline: 2px solid red; */
     float: right;
-    /*margin-left: 40px;*/
+  /*   margin-left: 40px; */
     box-shadow: #888 0 4px 8px;
 }
 
@@ -186,6 +186,4 @@ footer .sns .twitter {
     background: url(../../img/twitter.png)no-repeat center;
     /* outline: 2px solid blue; */
     color: transparent;
-
 }
-
