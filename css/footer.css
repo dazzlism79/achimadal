@@ -46,6 +46,9 @@ footer .info li {
     margin-bottom: 5px;
 }
 
+footer .info li.copy {
+    margin-bottom: 15px;
+}
 
 footer .info ul address {
     font-style: normal;
