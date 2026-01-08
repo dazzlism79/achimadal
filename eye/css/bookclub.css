@@ -115,46 +115,77 @@ section table td.four {
     position: absolute;
     top: 19%;
     right: 7%;
-    transform: rotate(-10deg);
+    /* 기존 transform은 애니메이션이 대체하므로 삭제해도 무방합니다 */
+    /* 20초 동안, 일정 속도로(linear), 무한반복(infinite) */
+    animation: rotate_clover 20s linear infinite;
 }
 
 .img3 {
     position: absolute;
     top: 36%;
     right: 28%;
-    transform: rotate(-20deg);
+    /* 25초 동안, 반대 방향(reverse)으로 회전 */
+    animation: rotate_clover 25s linear infinite reverse;
 }
 
 .img4 {
     position: absolute;
     bottom: 30%;
     right: 8%;
-    transform: rotate(24deg);
+    /* 18초 속도 */
+    animation: rotate_clover 18s linear infinite;
 }
 
 .img5 {
     position: absolute;
     top: 9%;
     right: 31%;
-    transform: rotate(-20deg);
+    /* 22초 속도, 반대 방향 */
+    animation: rotate_clover 22s linear infinite reverse;
 }
 
 .img6 {
     position: absolute;
     bottom: -45%;
-    left: -6%;
+    left: -7%;
     transform: rotate(70deg);
 }
 
 .img7 {
-    position: absolute;
+   position: absolute;
     bottom: 11%;
     right: 25%;
-    transform: rotate(-16deg);
+    /* transform: rotate(-16deg); <-- 애니메이션이 덮어쓰므로 여기선 지워도 되지만, 혹시 모를 로딩 지연을 위해 둬도 됩니다. */
+    
+    /* 1초(1s) 동안, 부드럽게(ease-in-out), 무한반복(infinite) */
+    animation: jump_rabbit 1.5s ease-in-out infinite;
 
 }
 
+@keyframes rotate_clover {
+    from {
+        transform: rotate(0deg);
+    }
 
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes jump_rabbit {
+    0% {
+        /* 시작: 원래 각도 유지, 위치 0 */
+        transform: rotate(-16deg) translateY(0);
+    }
+    50% {
+        /* 중간: 원래 각도 유지, 위로 30px 이동 (점프 높이) */
+        transform: rotate(-16deg) translateY(-50px);
+    }
+    100% {
+        /* 끝: 다시 제자리로 */
+        transform: rotate(-16deg) translateY(0);
+    }
+}
 
 /* /////////////////////////////////////////////////////// */
 
@@ -167,9 +198,9 @@ footer {
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
-    box-sizing: border-box;
     z-index: 999;
     margin: 0 auto;
+    padding: 20px 0;
 }
 
 footer::after {
@@ -190,6 +221,9 @@ footer .info li {
     margin-bottom: 5px;
 }
 
+footer .info li.copy {
+    margin-bottom: 15px;
+}
 
 footer .info ul address {
     font-style: normal;
